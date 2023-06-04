@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThanhToanHDController">
+   <children>
+      <Button fx:id="Back" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0" prefWidth="110.0" text="Quay lại" />
+      <TableView fx:id="tableItemDonHang" layoutX="30.0" layoutY="103.0" prefHeight="316.0" prefWidth="518.0">
+        <columns>
+            <TableColumn fx:id="colIdItemDonHang" prefWidth="75.0" text="Mã Item" visible="false" />
+          <TableColumn fx:id="colIdSPItemDonHang" prefWidth="90.39999008178711" text="Mã hàng" />
+            <TableColumn fx:id="colTenSPItemDonHang" prefWidth="198.40003967285156" text="Tên mặt hàng" />
+            <TableColumn fx:id="colDonGiaItemDonHang" prefWidth="143.199951171875" text="Đơn giá" />
+          <TableColumn fx:id="colSLItemDonHang" prefWidth="83.99996948242188" text="Số lượng" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfMaHang" layoutX="749.0" layoutY="406.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="646.0" layoutY="406.0" text="Mã hàng:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="645.0" layoutY="438.0" text="Số lượng:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="tfSoLuong" layoutX="749.0" layoutY="438.0" prefHeight="26.0" prefWidth="182.0" />
+      <Button fx:id="Gui" layoutX="745.0" layoutY="511.0" mnemonicParsing="false" onAction="#Gui" prefHeight="26.0" prefWidth="70.0" text="Gửi" />
+      <Line endX="600.9999389648438" layoutX="399.0" layoutY="48.0" startX="-417.3999938964844" />
+      <Label layoutX="233.0" layoutY="63.0" text="Hóa đơn">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="-30.29998779296875" endY="499.0" layoutX="601.0" layoutY="101.0" startX="-30.29998779296875" startY="-52.5" />
+      <TableView fx:id="tableSPBayBan" layoutX="585.0" layoutY="103.0" prefHeight="190.0" prefWidth="390.0">
+        <columns>
+          <TableColumn fx:id="colTenSPBayBan" prefWidth="233.5999755859375" text="Tên mặt hàng" />
+            <TableColumn fx:id="colMaHangBayBan" minWidth="0.0" prefWidth="56.0" text="Mã hàng" visible="false" />
+            <TableColumn fx:id="colGiaBanBayBan" minWidth="0.0" prefWidth="154.4000244140625" text="Đơn giá" />
+        </columns>
+      </TableView>
+      <Label layoutX="649.0" layoutY="63.0" text="Danh sách sản phẩm bày bán">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="438.0" text="Tổng số tiền:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="464.0" text="Số tiền khách hàng đưa:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTienKhachHangDua" layoutX="214.0" layoutY="464.0" />
+      <Label layoutX="374.0" layoutY="464.0" text="(nghìn đồng)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbTongTien" layoutX="138.0" layoutY="438.0" prefHeight="26.0" prefWidth="70.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="438.0" text="(nghìn đồng)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="490.0" text="Số tiền hoàn lại:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbHoanTien" layoutX="155.0" layoutY="489.0" prefHeight="26.0" prefWidth="70.0" text="0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="490.0" text="(nghìn đồng)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="350.0" text="Nhập đơn hàng">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Xoa" disable="true" layoutX="511.0" layoutY="424.0" mnemonicParsing="false" onAction="#XoaItem" text="Xóa" />
+      <Button layoutX="31.0" layoutY="547.0" mnemonicParsing="false" onAction="#HoanTatThanhToan" text="Hoàn tất thanh toán" />
+      <Label layoutX="585.0" layoutY="12.0" text="Thu ngân:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="690.0" layoutY="13.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbHoTen" layoutX="666.0" layoutY="12.0" prefHeight="26.0" prefWidth="227.0" text="....">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="512.0" text="Thời gian:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbThoiGianThanhToan" layoutX="108.0" layoutY="512.0" prefHeight="26.0" prefWidth="130.0" text="....">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="645.0" layoutY="470.0" text="Giá bán:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfGiaBan" editable="false" layoutX="749.0" layoutY="470.0" prefHeight="26.0" prefWidth="182.0" />
+      <Button fx:id="TinhTien" layoutX="338.0" layoutY="492.0" mnemonicParsing="false" onAction="#TinhTienThua" prefHeight="18.0" prefWidth="51.0" text="Tính">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

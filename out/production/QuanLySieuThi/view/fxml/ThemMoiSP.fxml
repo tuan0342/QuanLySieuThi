@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThemMoiSPController">
+   <children>
+      <Label layoutX="364.0" layoutY="51.0" text="Thêm mới sản phẩm">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="175.0" text="Tên sản phẩm:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTenSP" layoutX="461.0" layoutY="174.0" prefHeight="26.0" prefWidth="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="306.0" layoutY="231.0" text="Phân loại:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPhanLoai" layoutX="461.0" layoutY="230.0" prefHeight="26.0" prefWidth="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="306.0" layoutY="286.0" text="Giá nhập:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfGiaNhap" layoutX="461.0" layoutY="285.0" prefHeight="26.0" prefWidth="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="306.0" layoutY="340.0" text="Giá bán:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfGiaBan" layoutX="461.0" layoutY="339.0" prefHeight="26.0" prefWidth="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="306.0" layoutY="392.0" text="Đại lý cung cấp:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxDaiLy" layoutX="461.0" layoutY="389.0" prefHeight="30.0" prefWidth="238.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" text="Quay lại" />
+      <Button layoutX="726.0" layoutY="389.0" mnemonicParsing="false" onAction="#TaoMoiDaiLy" prefHeight="30.0" prefWidth="103.0" text="Tạo mới đại lý" />
+      <Label layoutX="306.0" layoutY="431.0" text="* Nếu đại lý chưa tồn tại trong hệ thống, hãy tạo mới đại lý" textFill="#ff2525">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="438.0" layoutY="472.0" mnemonicParsing="false" onAction="#insertSanPham" text="Thêm sản phẩm" />
+      <Label layoutX="306.0" layoutY="126.0" text="Mã sản phẩm:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMaSP" layoutX="461.0" layoutY="125.0" prefHeight="26.0" prefWidth="238.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="843.0" layoutY="389.0" mnemonicParsing="false" onAction="#Load" prefHeight="30.0" prefWidth="101.0" text="Tải lại dữ liệu" />
+   </children>
+</AnchorPane>

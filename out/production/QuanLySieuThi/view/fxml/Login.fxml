@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #f2f2f2;" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="411.0">
+         <children>
+            <ImageView fitHeight="385.0" fitWidth="413.0" layoutX="7.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../source/img/loginscreen.png" />
+               </image>
+            </ImageView>
+            <Line endX="-100.0" endY="344.0" layoutX="520.0" layoutY="188.0" startX="-100.0" startY="-140.8000030517578" stroke="#8e8e8e" strokeWidth="3.0" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="602.0">
+         <children>
+            <Label layoutX="91.0" layoutY="27.0" text="HỆ THỐNG QUẢN LÝ KHO HÀNG SIÊU THỊ" textFill="#682fa9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="180.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUserName" layoutX="122.0" layoutY="239.0" prefHeight="38.0" prefWidth="334.0" promptText="Username" text="QL001">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <PasswordField fx:id="pwfPassWord" layoutX="122.0" layoutY="300.0" prefHeight="38.0" prefWidth="334.0" promptText="Password" text="jack5m">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnLogin" layoutX="122.0" layoutY="364.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="334.0" style="-fx-background-color: #682fa9;" text="LOGIN" textFill="#f4f4f4">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="102.0" fitWidth="111.0" layoutX="240.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../source/img/lock-icon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</HBox>

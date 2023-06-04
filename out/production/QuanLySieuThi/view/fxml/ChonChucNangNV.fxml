@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChonChucNangNVController">
+   <children>
+      <Label layoutX="370.0" layoutY="40.0" text="Thông tin nhân viên trực">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDangXuat" layoutX="343.0" layoutY="382.0" mnemonicParsing="false" onAction="#DangXuat" prefHeight="26.0" prefWidth="110.0" text="Đăng xuất" />
+      <Label layoutX="354.0" layoutY="123.0" text="Họ và tên:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbHoTen" layoutX="520.0" layoutY="123.0" text="Nguyễn Văn A">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="168.0" text="Mã nhân viên:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbMaNV" layoutX="520.0" layoutY="168.0" text="Nguyễn Văn A">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="216.0" text="Số điện thoại:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbSoDT" layoutX="520.0" layoutY="216.0" text="Nguyễn Văn A">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="546.0" layoutY="382.0" mnemonicParsing="false" onAction="#chonThanhToanHoaDon" prefHeight="26.0" prefWidth="110.0" text="Thanh toán" />
+   </children>
+</AnchorPane>

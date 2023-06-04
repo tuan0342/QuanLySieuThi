@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThemMoiDaiLyController">
+   <children>
+      <Label layoutX="277.0" layoutY="27.0" text="Thêm mới đại lý vào cơ sở dữ liệu">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#Back" text="Quay lại" />
+      <TableView fx:id="tableDaiLy" layoutX="450.0" layoutY="100.0" prefHeight="470.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="colMaDL" prefWidth="75.0" text="Mã đại lý" />
+          <TableColumn fx:id="colTenDL" prefWidth="143.20001220703125" text="Tên đại lý" />
+            <TableColumn fx:id="colSoDT" prefWidth="88.79998779296875" text="Số điện thoại" />
+            <TableColumn fx:id="colDiaChi" prefWidth="220.0" text="Địa chỉ" />
+        </columns>
+      </TableView>
+      <Label layoutX="59.0" layoutY="136.0" text="Mã đại lý:" />
+      <TextField fx:id="tfMaDL" layoutX="162.0" layoutY="132.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="59.0" layoutY="181.0" text="Tên đại lý:" />
+      <TextField fx:id="tfTenDL" layoutX="162.0" layoutY="176.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="59.0" layoutY="225.0" text="Số điện thoại:" />
+      <TextField fx:id="tfSoDT" layoutX="162.0" layoutY="220.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="59.0" layoutY="266.0" text="Địa chỉ:" />
+      <TextField fx:id="tfDiaChi" layoutX="162.0" layoutY="262.0" prefHeight="26.0" prefWidth="206.0" />
+      <Label layoutX="59.0" layoutY="308.0" text="* Chú ý: Mã đại lý do người dùng tự đặt và không được trùng nhau" textFill="#ff2424" />
+      <Button layoutX="162.0" layoutY="343.0" mnemonicParsing="false" onAction="#LuuThongTin" prefHeight="26.0" prefWidth="110.0" text="Lưu thông tin" />
+   </children>
+</AnchorPane>

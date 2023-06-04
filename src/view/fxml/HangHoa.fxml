@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HangHoaController">
+   <children>
+      <TableView fx:id="tableSanPham" layoutX="165.0" layoutY="21.0" prefHeight="546.0" prefWidth="822.0">
+        <columns>
+            <TableColumn fx:id="colMaSP" text="Mã SP" />
+          <TableColumn fx:id="colTenSP" prefWidth="170.0" text="Tên sản phẩm" />
+          <TableColumn fx:id="colPhanLoai" prefWidth="110.0" text="Phân loại" />
+            <TableColumn fx:id="colGiaNhap" prefWidth="90.0" text="Giá nhập" />
+            <TableColumn fx:id="colGiaBan" prefWidth="90.0" text="Giá bán" />
+            <TableColumn fx:id="colSoLuongNhap" prefWidth="90.0" text="SL nhập về" />
+            <TableColumn fx:id="colSoLuongBan" prefWidth="90.0" text="SL đã bán" />
+            <TableColumn fx:id="colTongSL" prefWidth="90.0" text="Tổng SL" />
+            <TableColumn fx:id="colTenDaiLy" prefWidth="150.0" text="Đại lý cung cấp" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnThemMoiSanPham" layoutX="13.0" layoutY="60.0" mnemonicParsing="false" onAction="#ThemMoiSanPham" prefHeight="26.0" prefWidth="134.0" text="Thêm mới sản phẩm" />
+      <Label layoutX="11.0" layoutY="194.0" text="Tên sản phẩm:" />
+      <TextField fx:id="tfTenSP" disable="true" layoutX="17.0" layoutY="219.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="13.0" layoutY="268.0" text="Phân loại:" />
+      <TextField fx:id="tfPhanLoai" disable="true" layoutX="17.0" layoutY="294.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="15.0" layoutY="340.0" text="Giá nhập:" />
+      <TextField fx:id="tfGiaNhap" disable="true" layoutX="17.0" layoutY="365.0" prefHeight="26.0" prefWidth="134.0" />
+      <Label layoutX="17.0" layoutY="405.0" text="Giá bán:" />
+      <TextField fx:id="tfGiaBan" disable="true" layoutX="17.0" layoutY="430.0" prefHeight="26.0" prefWidth="134.0" />
+      <Button fx:id="btnBack" layoutX="11.0" layoutY="9.0" mnemonicParsing="false" onAction="#Back" text="Quay lại" />
+      <Button fx:id="btnHoanTat" disable="true" layoutX="31.0" layoutY="481.0" mnemonicParsing="false" onAction="#ChinhSuaThongTinSP" prefHeight="26.0" prefWidth="78.0" text="Hoàn Tất" />
+      <Button fx:id="btnHuyBo" disable="true" layoutX="31.0" layoutY="518.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Hủy Bỏ" />
+      <Label fx:id="lbHeader" layoutX="14.0" layoutY="155.0" text="Chỉnh sửa sản phẩm" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
