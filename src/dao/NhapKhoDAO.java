@@ -70,6 +70,7 @@ public class NhapKhoDAO {
                 "WHERE MaSanPham = '" + maSp + "';";
         try {
             DBUtils.dbExecuteQuery(sql);
+            CanhBao.showAlertInfo("Thêm thành công!", null, null);
         } catch (SQLException e) {
             CanhBao.showAlertError("insert vào báng Sản phẩm và Nhập kho thất bại!", "Failed insert", null);
         }

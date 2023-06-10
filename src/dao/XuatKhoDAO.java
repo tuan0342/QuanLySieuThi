@@ -52,6 +52,7 @@ public class XuatKhoDAO {
                 "\tWHERE MaSanPham = '" + maSp + "' AND MaLo = '" + maLo + "';";
         try {
             DBUtils.dbExecuteQuery(sql);
+            CanhBao.showAlertInfo("Xuất hàng thành công", null, null);
         } catch (SQLException e) {
             CanhBao.showAlertError("insert vào bảng Xuất kho và Trưng bày thất bại!", "Failed insert", null);
         }
@@ -71,6 +72,7 @@ public class XuatKhoDAO {
                 "WHERE MaSanPham = '" + maSp + "' AND MaLo = '" + maLo + "';";
         try {
             DBUtils.dbExecuteQuery(sql);
+            CanhBao.showAlertInfo("Chỉnh sửa hàng thành công", null, null);
         } catch (SQLException e) {
             CanhBao.showAlertError("update vào bảng Xuất kho và Trưng bày thất bại!", "Failed update", null);
         }

@@ -23,7 +23,7 @@
             <TableColumn fx:id="colSoLuongXuatKho" prefWidth="72.0" text="Số lượng" />
             <TableColumn fx:id="colTenNguoiXuatKho" prefWidth="143.20001220703125" text="Người xuất" />
             <TableColumn fx:id="colTenNguoiNhan" prefWidth="114.400146484375" text="Người nhận" />
-            <TableColumn fx:id="colMaLoXuatKho" prefWidth="49.599853515625" text="Mã lô" />
+            <TableColumn fx:id="colMaLoXuatKho" prefWidth="70.0" text="Mã lô" />
             <TableColumn fx:id="colNgayXuat" prefWidth="76.7999267578125" text="Ngày" />
             <TableColumn fx:id="colMaSPXuatKho" prefWidth="75.0" text="Mã sản phẩm" visible="false" />
             <TableColumn fx:id="colMaNguoiXuatKho" prefWidth="75.0" text="Mã người xuất" visible="false" />

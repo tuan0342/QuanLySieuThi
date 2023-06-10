@@ -168,8 +168,6 @@ public class ThemHangNhapKhoController implements Initializable {
             }
             NhapKhoDAO.insertSanPham(tfMaLo.getText().trim(), maSP, maDaiLy, maNguoiNhapHang.toUpperCase(), tfSoLuong.getText().trim(),
                     tfGiaNhap.getText().trim(), tfHanSuDung.getText().trim());
-            CanhBao.showAlertInfo("Thêm thành công!", null, null);
-
         } else {
             CanhBao.showAlertWarning("Nhập đầy đủ thông tin", "Thêm thất bại", null);
         }

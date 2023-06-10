@@ -123,6 +123,7 @@ public class UserDAO {
                 "VALUES ('" + maNv + "', '" + matKhau + "', N'" + vaiTro + "');";
         try {
             DBUtils.dbExecuteQuery(sql);
+            CanhBao.showAlertInfo("Thêm mới nhân viên thành công", null, null);
         } catch (SQLException e) {
             CanhBao.showAlertError("insert vào 2 bảng Nhân viên và Login thất bại!", "Failed insert", null);
         }
@@ -139,6 +140,7 @@ public class UserDAO {
                 "WHERE MaNhanVien = '" + maNv + "';";
         try {
             DBUtils.dbExecuteQuery(sql);
+            CanhBao.showAlertInfo("Cập nhật nhân viên thành công", null, null);
         } catch (SQLException e) {
             CanhBao.showAlertError("update vào 2 bảng Nhân viên và Login thất bại!", "Failed update", null);
         }
@@ -150,6 +152,7 @@ public class UserDAO {
                 "DELETE FROM NhanVien WHERE MaNhanVien='" + maNv + "';";
         try {
             DBUtils.dbExecuteQuery(sql);
+            CanhBao.showAlertInfo("Xóa nhân viên thành công", null, null);
         } catch (SQLException e) {
             CanhBao.showAlertError("Xóa vào 2 bảng Nhân viên và Login thất bại!", "Failed delete", null);
         }

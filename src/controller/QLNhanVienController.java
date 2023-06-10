@@ -160,7 +160,7 @@ public class QLNhanVienController implements Initializable {
                 cbVaiTro.getValue().trim());
         clearText();
         setDisable(true);
-        CanhBao.showAlertInfo("Cập nhật nhân viên thành công", null, null);
+
 
         setDisable(true);
         btnChinhSuaTT.setDisable(true);
@@ -177,7 +177,7 @@ public class QLNhanVienController implements Initializable {
         UserDAO.deleteNhanVien(tfMaNV.getText().trim());
         clearText();
         setDisable(true);
-        CanhBao.showAlertInfo("Xóa nhân viên thành công", null, null);
+
 
         setDisable(true);
         btnChinhSuaTT.setDisable(true);
@@ -200,7 +200,7 @@ public class QLNhanVienController implements Initializable {
             btnChinhSuaTT.setDisable(true);
             btnXoaNhanVien.setDisable(true);
 
-            CanhBao.showAlertInfo("Thêm mới nhân viên thành công", null, null);
+
 
             setCellTable();
             loadDataFromDB();

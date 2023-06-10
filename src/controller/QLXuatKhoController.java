@@ -278,11 +278,11 @@ public class QLXuatKhoController implements Initializable {
             if(luaChon == 1) {
                 XuatKhoDAO.insertXuatKho(tfMaXuatKho.getText().trim(), maSP, tfSoLuong.getText().trim(),
                         maNguoiXuat.toUpperCase(), maNguoiNhan.toUpperCase(), tfNgayXuatKho.getText().trim(), tfMaLo.getText().trim());
-                CanhBao.showAlertInfo("Xuất hàng thành công", null, null);
+
             } else if(luaChon == 2){
                 XuatKhoDAO.updateXuatKho(tfMaXuatKho.getText().trim(), maSP, tfSoLuong.getText().trim(),
                         maNguoiXuat.toUpperCase(), maNguoiNhan.toUpperCase(), tfNgayXuatKho.getText().trim(), tfMaLo.getText().trim());
-                CanhBao.showAlertInfo("Chỉnh sửa hàng thành công", null, null);
+
             }
 
             setCellTableXuatKho();
